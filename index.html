@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harsh Dhakar - Portfolio</title>
+<!-- Tailwind CSS with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eca413",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221c10", // Dark warm charcoal
+                        "surface-dark": "#2a2418", // Slightly lighter for cards
+                        "ivory": "#e8e6e1", // Warm Ivory for text
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                        "accent": ["Playfair Display", "serif"]
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 4px 20px -5px rgba(236, 164, 19, 0.15)',
+                        'card-depth': '0 10px 30px -10px rgba(0, 0, 0, 0.5)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>/* Custom Smooth Scroll */
+html {
+    scroll-behavior: smooth
+    }
+/* Indian Pattern Overlay (Subtle) */
+.pattern-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDEW5uo1kGt_z4M_fZvAwRSwIDXlIrkKARBEYaytNkCwL0JmaN7AUbp4hBYbrE8CdBUIM0siZZ3Gys3Aote9JY7PUQCPMtVZbSSiJqrSqwy23C-f_ZTV1S7tzUrcgQiicuqa_xQgJEESvDvxHWDlMtn63OKl3QIgB1yrSlmwwV-o7ZSQWQrnMQuoG5f8ICGpX-7_dVnuq3itewaTsl-X9-HiJBdo1QvX6Mqc3c9XOMQNa2pIWbBWuu29YcITLZ86QKPVA2vTEYABg)
+    }
+/* Text selection color */
+::selection {
+    background-color: #eca413;
+    color: #221c10
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#221c11] dark:text-ivory font-body overflow-x-hidden antialiased selection:bg-primary selection:text-white">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-background-dark/80 border-b border-primary/20 transition-all duration-300">
+<div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="relative size-10 flex items-center justify-center border border-primary/50 rounded-full group-hover:border-primary transition-colors duration-300">
+<span class="font-display font-bold text-xl text-primary tracking-tighter">HD</span>
+</div>
+<span class="font-display font-medium text-lg text-white hidden sm:block">Harsh Dhakar</span>
+</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#philosophy">Philosophy</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
+<a class="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-background-dark transition-all duration-300 font-medium text-sm" href="#contact">
+                    Let's Talk
+                </a>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden pattern-overlay">
+<!-- Abstract Glow Background -->
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-[960px] mx-auto px-6 relative z-10 flex flex-col items-center text-center gap-8">
+<span class="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-2 animate-fade-in-up">
+                Copywriter &amp; Storyteller
+            </span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-medium text-white leading-[1.1] tracking-tight">
+                Words that <br/>
+<span class="italic text-primary font-light">weave worlds.</span>
+</h1>
+<p class="text-lg md:text-xl text-ivory/70 max-w-2xl font-light leading-relaxed">
+                Crafting calm luxury through storytelling. Bridging the gap between culture and commerce with an elegant, Indian-inspired touch.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-6">
+<a class="px-8 py-3 rounded bg-primary text-background-dark font-bold hover:bg-[#d6930f] transition-colors shadow-gold-glow" href="#work">
+                    View Selected Work
+                </a>
+<a class="px-8 py-3 rounded border border-white/20 text-white hover:bg-white/5 transition-colors" href="#about">
+                    Read Biography
+                </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
+<span class="material-symbols-outlined text-3xl">keyboard_arrow_down</span>
+</div>
+</section>
+<!-- Signature Statement -->
+<section class="py-24 bg-surface-dark border-y border-white/5">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">format_quote</span>
+<h2 class="font-display text-3xl md:text-4xl text-white leading-normal italic font-light">
+                "In a world of noise, I choose resonance. My work isn't just about selling; it's about connecting deep cultural roots with modern aspirations to create a signature that lingers."
+            </h2>
+<div class="mt-8 h-px w-24 bg-primary mx-auto"></div>
+</div>
+</section>
+<!-- What I Do (Services Highlight) -->
+<section class="py-32 relative bg-background-dark" id="services">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-display text-4xl text-white mb-4">Core Competencies</h2>
+<p class="text-ivory/60 max-w-md">Precision-crafted services designed for premium brands looking to elevate their narrative.</p>
+</div>
+<a class="text-primary hover:text-white transition-colors flex items-center gap-2 text-sm font-medium group" href="#contact">
+                    View Service Details <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group p-8 rounded-lg bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 shadow-card-depth hover:-translate-y-1">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<h3 class="font-display text-2xl text-white mb-3 group-hover:text-primary transition-colors">Brand Copywriting</h3>
+<p class="text-ivory/60 leading-relaxed text-sm">Website copy, manifestos, and taglines that distill your brand essence into potent words.</p>
+</div>
+<!-- Card 2 -->
+<div class="group p-8 rounded-lg bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 shadow-card-depth hover:-translate-y-1">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<h3 class="font-display text-2xl text-white mb-3 group-hover:text-primary transition-colors">Content Strategy</h3>
+<p class="text-ivory/60 leading-relaxed text-sm">Long-term narrative arcs and content calendars that build authority and trust over time.</p>
+</div>
+<!-- Card 3 -->
+<div class="group p-8 rounded-lg bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 shadow-card-depth hover:-translate-y-1">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="font-display text-2xl text-white mb-3 group-hover:text-primary transition-colors">LinkedIn Personal Branding</h3>
+<p class="text-ivory/60 leading-relaxed text-sm">Thought leadership content and carousels designed to position you as an industry voice.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Work -->
+<section class="py-32 bg-surface-dark pattern-overlay" id="work">
+<div class="max-w-[1280px] mx-auto px-6">
+<h2 class="font-display text-4xl text-white mb-16 text-center">Featured Work</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg aspect-[4/3] mb-4 bg-background-dark border border-white/5">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Luxury interior design editorial spread" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJsqFZ-J0AdK7Iuoz9L1HwKJwZr31z5ic-FSxidMzC5Z5lqpzTdnLtfJluMfIcApR6vM2NqKdrm7Ng5DbSF1BldKqGCpQFcBjknc09I-L6bEh21VRFz9JtaJ5iw5qSKuSwcYemX58m9wAMMVH_fJ9S_KqRfWesB4olWTK3rkRGKWdl7tEmSnP5x0gxEVSmDfBzBWB7oB7iD_qmTBDlRdD041IkshL7LqvvMpbwJmFF2oJFLyfBW95Mt9S_-enJ1EunsTP-VzejIg');">
+</div>
+<div class="absolute bottom-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+<div class="size-10 rounded-full bg-primary flex items-center justify-center text-background-dark shadow-lg">
+<span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-display text-white mb-1 group-hover:text-primary transition-colors">The Royal Heritage</h3>
+<p class="text-sm text-ivory/50">Brand Narrative &amp; Website Copy</p>
+</article>
+<!-- Project 2 (LinkedIn Carousel Style) -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg aspect-[4/3] mb-4 bg-background-dark border border-white/5">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract digital waves representing social media growth" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPMoXJQZSedKPbtVp-6zT0KlMovNJBrFmf54Gg78Td0W4JAu6i-w6BLRKun2GTjEGvGsp3ZS5PG8MFPHe2kxhn5PX-Cr9mZfpF-TnbEag9RN6FaYEAa4to-yPxVZBMK3qlqJv_agzcotdCBy1LxNCkj5N2VI1NF3dX9ElqRYMED7Nmj_8ahML6TuuJMKKlc6i66UpN6i_GJoM5uhar-egbVQO6R0AR_JDr2RzRnD1dhWprOUKv7Pkaipo7lShGgHurjHa6D8nAsA');">
+</div>
+<div class="absolute top-4 left-4 z-20">
+<span class="bg-[#0077b5] text-white text-[10px] font-bold px-2 py-1 rounded">LINKEDIN</span>
+</div>
+<div class="absolute bottom-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+<div class="size-10 rounded-full bg-primary flex items-center justify-center text-background-dark shadow-lg">
+<span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-display text-white mb-1 group-hover:text-primary transition-colors">Growth &amp; Aesthetics</h3>
+<p class="text-sm text-ivory/50">Carousel Design &amp; Copy Strategy</p>
+</article>
+<!-- Project 3 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg aspect-[4/3] mb-4 bg-background-dark border border-white/5">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist camera on dark surface" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIa9Oo43pdgdmIWX71DugdBd71lmIjzFS13H5ybcelV5DMFXzMW3SC9UiLYCaKXscv_OcKLDAtJ2KPwZtsaU9RXLg-KBj3WHNnjbAnuEQ3ePtRVTGfKKq5-cjKHUDc4fD-ozeFZ_DzN-hQhBOyhP4mq5MX-51_0saFp70TSyT1D2vbwxQDSrBJkjqBeEoaRIi716ogAT5v_PkVlNPKq7zW8LaXHFjHTuUItefQntwbZRhSsskrsgwa7TtGF4TsrI8LnBGw-ZMe3g');">
+</div>
+<div class="absolute bottom-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+<div class="size-10 rounded-full bg-primary flex items-center justify-center text-background-dark shadow-lg">
+<span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-display text-white mb-1 group-hover:text-primary transition-colors">Lumina Studios</h3>
+<p class="text-sm text-ivory/50">Rebranding &amp; Tone of Voice</p>
+</article>
+</div>
+<div class="mt-16 text-center">
+<button class="inline-flex items-center gap-2 px-6 py-3 border border-primary/30 rounded text-primary hover:bg-primary/10 transition-colors text-sm font-bold uppercase tracking-wider">
+                    View Full Portfolio
+                    <span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- About & Philosophy Split -->
+<section class="py-32 bg-background-dark overflow-hidden" id="about">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Image Side -->
+<div class="relative order-2 lg:order-1">
+<!-- Decorative Gold Frame Element -->
+<div class="absolute -top-6 -left-6 w-full h-full border border-primary/20 rounded-lg"></div>
+<div class="absolute -bottom-6 -right-6 w-full h-full border border-primary/20 rounded-lg"></div>
+<div class="relative rounded-lg overflow-hidden shadow-2xl aspect-[3/4] lg:aspect-square">
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+<img alt="Portrait of Harsh Dhakar in minimalist attire" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr7KdV83UrpzCC2PMSOWydB-AQBJtnzHuePkJ2a_E52gw8yU_Nk8qcxYK6uzleaANB2EJwRS6U38i4-E15C1nAuMhz1XHyGZXduYYY8bGuA_DZC1KZzg_0s8xXRBu0OcMD4QYER9IZrI-d6y36MKitnl_WKGt5q2DBgnBJxDwUkW23Ggh8nzYUcflPlgNKbuxcFXQDaJ7cjnQkT1XtOr8GIcM_k5M4_6kCeGF-h6lyWeAHPY17dQfLjs7Y2xbQ-JotvInFNPjLqA"/>
+</div>
+</div>
+<!-- Text Side -->
+<div class="order-1 lg:order-2 flex flex-col gap-8">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">About Me</span>
+<h2 class="font-display text-4xl lg:text-5xl text-white leading-tight">
+                        Fusing traditional wisdom with modern clarity.
+                    </h2>
+<div class="space-y-6 text-ivory/70 font-light text-lg">
+<p>
+                            I am Harsh Dhakar, a copywriter who believes that every brand has a soul waiting to be articulated. My journey began not in an ad agency, but in the pages of classic literature and the vibrant tapestry of Indian culture.
+                        </p>
+<p>
+                            I don't just write words; I engineer emotions. By applying a minimalist lens to complex ideas, I help premium brands communicate with authority, elegance, and profound simplicity.
+                        </p>
+</div>
+<div class="pt-8 border-t border-white/10 mt-4" id="philosophy">
+<h3 class="font-display text-2xl text-white mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">spa</span>
+                            My Philosophy
+                        </h3>
+<p class="text-ivory/60 text-sm leading-relaxed">
+                            Inspired by the concept of <em>"Rasa"</em> (essence) in Indian aesthetics, my work strives to evoke a specific emotional flavor in the audience. It is about removing the clutter to reveal the golden truth of your brand.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Slider -->
+<section class="py-32 bg-surface-dark border-t border-white/5 relative">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex justify-between items-center mb-12">
+<h2 class="font-display text-3xl md:text-4xl text-white">Words from Partners</h2>
+<div class="flex gap-2">
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="size-10 rounded-full bg-primary text-background-dark flex items-center justify-center hover:bg-[#d6930f] transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Testimonial 1 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-background-dark p-8 rounded-lg border-l-4 border-primary relative snap-center">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4">format_quote</span>
+<p class="text-ivory/80 italic font-display text-lg mb-6 relative z-10">"Harsh has an uncanny ability to turn vague ideas into poetic yet profitable copy. The rebranding he did for us was nothing short of transformative."</p>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-gray-700 bg-cover bg-center" data-alt="Client portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9lYr4WZtUO-ID5iZOpvz8kZq2o2SBMSZe-WFAstTjHI5a5tZSmp1zgmLBj1yhdZ2nXzWppMtE0qkDKCFStvZ7JQZZkpCCuVunzBJvmcIWEBOagb75haP4_eiLMDAXpgAie0I3X4arQrQi6fmXS0ER8ycMcFEtbRO55NVjiL91pvbk5tGmyb6O-QhCovJugXev7EFn8-xfKECsc1eLWi_sRdyhVh_gGIfYkbpZ8rY5k3dyz_a7WEMPhwvrVD6CjbNfRC_7QMXAsg')"></div>
+<div>
+<h4 class="text-white font-bold text-sm">Priya Sharma</h4>
+<p class="text-primary text-xs">CEO, Veda Organics</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-background-dark p-8 rounded-lg border-l-4 border-white/10 relative snap-center">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4">format_quote</span>
+<p class="text-ivory/80 italic font-display text-lg mb-6 relative z-10">"The LinkedIn carousel strategy Harsh implemented doubled my engagement in two weeks. He understands the algorithm and human psychology equally well."</p>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-gray-700 bg-cover bg-center" data-alt="Client portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiNKhVVxn-QPoeKC3w9QSAEvDVcmynH42ViKD_9dY7Eo422PpuYj8hRT9EFeikLeunzj5t3144hMZJB65nfLILkE32jqCe7Hm5Scomx88ZwAhs4Nhv3Z3UEWeESav7MX5TLVe9k_wlcDzr7S8prJTMBQuKzHv1B7Pab8mWldT9WjIH-IBu3Pp71ks53_ZN3tarpBRXBa6QwFWS2yUR84r5XnC4LsX-hmYtGXm4juR7BbaUYy3FTjFIU7tgCoDuNQeOnsJmXwDxvQ')"></div>
+<div>
+<h4 class="text-white font-bold text-sm">David Chen</h4>
+<p class="text-white/50 text-xs">Founder, TechFlow</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-background-dark p-8 rounded-lg border-l-4 border-white/10 relative snap-center">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4">format_quote</span>
+<p class="text-ivory/80 italic font-display text-lg mb-6 relative z-10">"Elegant, timely, and deeply thoughtful. Working with Harsh felt less like hiring a freelancer and more like collaborating with an artist."</p>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-gray-700 bg-cover bg-center" data-alt="Client portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDu8sydMCYBAxBH9G1AWHDiTm_lksquMq67YtmI0uPHwaKd6m3OGd8U_BTIg8KMIKw_zY-9aYexbQM6q4C7bf1v_NUmwIeC46ve2hM1U8i-7OxrZuVBpYCGdM-vgHfs80p2JYVrT9jCuURbcS5EBxvRiT2VQ-GN6p6lBqjz1-ZpcDWPZoPyxuyZW9AbIV0FcxoCk5b-VR52srE36lCc8MYI_Ln0ot6-QoSKe-2uZn2aVgJr1vtPK8lprLFs3YRsR9aLbVvU1sLkaQ')"></div>
+<div>
+<h4 class="text-white font-bold text-sm">Elena Rodriguez</h4>
+<p class="text-white/50 text-xs">Director, Muse Gallery</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-background-dark relative overflow-hidden" id="contact">
+<!-- Background Elements -->
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+<div class="max-w-[960px] mx-auto px-6 relative z-10">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-2 block">Contact</span>
+<h2 class="font-display text-5xl text-white mb-6">Let's create something timeless.</h2>
+<p class="text-ivory/60 max-w-xl mx-auto">Open for collaborations with brands that value depth over breadth.</p>
+</div>
+<div class="bg-surface-dark p-8 md:p-12 rounded-xl border border-white/5 shadow-2xl">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group">
+<label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2 group-focus-within:text-primary transition-colors">Name</label>
+<input class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:border-primary focus:ring-0 focus:outline-none transition-colors placeholder-white/10" placeholder="Your name" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2 group-focus-within:text-primary transition-colors">Email</label>
+<input class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:border-primary focus:ring-0 focus:outline-none transition-colors placeholder-white/10" placeholder="email@address.com" type="email"/>
+</div>
+</div>
+<div class="group">
+<label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2 group-focus-within:text-primary transition-colors">Service Interest</label>
+<select class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:border-primary focus:ring-0 focus:outline-none transition-colors [&amp;&gt;option]:bg-background-dark">
+<option>Brand Copywriting</option>
+<option>Content Strategy</option>
+<option>LinkedIn Personal Branding</option>
+<option>Other</option>
+</select>
+</div>
+<div class="group">
+<label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2 group-focus-within:text-primary transition-colors">Message</label>
+<textarea class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:border-primary focus:ring-0 focus:outline-none transition-colors placeholder-white/10 resize-none" placeholder="Tell me about your project..." rows="3"></textarea>
+</div>
+<div class="pt-4 flex justify-end">
+<button class="bg-primary text-background-dark font-bold px-8 py-3 rounded hover:bg-[#d6930f] transition-all duration-300 shadow-gold-glow hover:shadow-lg hover:scale-[1.02]" type="button">
+                            Send Inquiry
+                        </button>
+</div>
+</form>
+</div>
+<div class="mt-16 flex justify-center gap-8">
+<a class="text-ivory/50 hover:text-primary transition-colors text-sm uppercase tracking-widest font-bold" href="#">LinkedIn</a>
+<a class="text-ivory/50 hover:text-primary transition-colors text-sm uppercase tracking-widest font-bold" href="#">Twitter</a>
+<a class="text-ivory/50 hover:text-primary transition-colors text-sm uppercase tracking-widest font-bold" href="#">Instagram</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-8 bg-background-dark border-t border-white/5 text-center">
+<p class="text-ivory/30 text-xs font-body">
+            © 2024 Harsh Dhakar. Crafted with purpose.
+        </p>
+</footer>
+</body></html>
